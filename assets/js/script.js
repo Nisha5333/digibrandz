@@ -1,47 +1,64 @@
-// Initialize AOS
+// Initialize AOS and IMD Interactive Features
 document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        offset: 100
-    });
+    // Initialize AOS if available
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 80
+        });
+    }
 
-    // Counter Animation
+    // Animated Counter for Stats
     const counters = document.querySelectorAll('.counter');
     
-    // Create an Intersection Observer to start counting when visible
     const counterObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const counter = entry.target;
-                const target = +counter.getAttribute('data-target');
-                const duration = 2000; // 2 seconds
-                const increment = target / (duration / 16); // 60fps
+                const target = parseFloat(counter.getAttribute('data-target'));
+                const prefix = counter.getAttribute('data-prefix') || '';
+                const suffix = counter.getAttribute('data-suffix') || '';
+                const isDecimal = counter.getAttribute('data-decimal') === 'true';
+                const duration = 2000;
+                const increment = target / (duration / 16);
                 
                 let current = 0;
                 
                 const updateCounter = () => {
                     current += increment;
                     if (current < target) {
-                        counter.innerText = Math.ceil(current);
+                        counter.innerText = prefix + (isDecimal ? current.toFixed(1) : Math.ceil(current)) + suffix;
                         requestAnimationFrame(updateCounter);
                     } else {
-                        counter.innerText = target;
+                        counter.innerText = prefix + target + suffix;
                     }
                 };
                 
                 updateCounter();
-                
-                // Stop observing once animated
                 observer.unobserve(counter);
             }
         });
     }, {
-        threshold: 0.5
+        threshold: 0.3
     });
 
-    counters.forEach(counter => {
-        counterObserver.observe(counter);
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // Scroll Reveal Animation
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
     });
+
+    revealElements.forEach(el => revealObserver.observe(el));
 });

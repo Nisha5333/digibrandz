@@ -1,43 +1,60 @@
-<footer class="pt-5" style="background: #0F172A; color: white;">
-    <div class="container py-5">
-        <div class="row g-4">
+<footer class="pt-5 bg-navy-dark position-relative overflow-hidden">
+    <!-- Subtle Background Glows -->
+    <div class="glowing-blob blob-purple" style="bottom: -20%; left: -10%; opacity: 0.15;"></div>
+    <div class="glowing-blob blob-pink" style="top: -20%; right: -10%; opacity: 0.15;"></div>
+
+    <div class="container py-5 position-relative z-index-1">
+        <div class="row g-4 justify-content-between">
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <h3 class="fw-bold mb-4" style="color: white;">DigiBrandz<span style="color: var(--primary-pink);">.</span></h3>
-                <p class="text-white-50 mb-4 pe-lg-5">We Don't Just Market. We Dominate. Comprehensive digital solutions tailored to your unique business needs.</p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="btn btn-outline-light rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-outline-light rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn btn-outline-light rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="btn btn-outline-light rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-instagram"></i></a>
+                <a href="index.php" class="text-decoration-none">
+                    <h3 class="fw-bold mb-3 text-white" style="font-family: 'Poppins', sans-serif;">DigiBrandz<span class="text-brand-pink">.</span></h3>
+                </a>
+                <p class="text-white-50 mb-4 pe-lg-4">DigiBrandz IT Solutions. We architect high-growth digital empires through data-driven strategies, fearless creativity, and a relentless pursuit of excellence.</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
             
             <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-                <h5 class="fw-bold mb-4" style="color: white;">Company</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="about.php" class="text-white-50 text-decoration-none">About Us</a></li>
-                    <li class="mb-2"><a href="career.php" class="text-white-50 text-decoration-none">Careers</a></li>
-                    <li class="mb-2"><a href="case-studies.php" class="text-white-50 text-decoration-none">Case Studies</a></li>
-                    <li class="mb-2"><a href="contact.php" class="text-white-50 text-decoration-none">Contact</a></li>
+                <h5 class="fw-bold mb-4 text-white">Company</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-2.5"><a href="about.php">About Us</a></li>
+                    <li class="mb-2.5"><a href="services.php">Our Services</a></li>
+                    <li class="mb-2.5"><a href="case-studies.php">Case Studies</a></li>
+                    <li class="mb-2.5"><a href="career.php">Careers</a></li>
+                    <li class="mb-2.5"><a href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
             
             <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
-                <h5 class="fw-bold mb-4" style="color: white;">Services</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="services.php" class="text-white-50 text-decoration-none">Digital Marketing</a></li>
-                    <li class="mb-2"><a href="services.php" class="text-white-50 text-decoration-none">SEO Optimization</a></li>
-                    <li class="mb-2"><a href="services.php" class="text-white-50 text-decoration-none">Web Development</a></li>
-                    <li class="mb-2"><a href="services.php" class="text-white-50 text-decoration-none">Social Media</a></li>
+                <h5 class="fw-bold mb-4 text-white">Core Services</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-2.5"><a href="services.php">Social Media Management</a></li>
+                    <li class="mb-2.5"><a href="services.php">Search Engine Optimization</a></li>
+                    <li class="mb-2.5"><a href="services.php">Google & Meta Ads</a></li>
+                    <li class="mb-2.5"><a href="services.php">Web & App Development</a></li>
+                    <li class="mb-2.5"><a href="services.php">AI Video Production</a></li>
                 </ul>
             </div>
             
             <div class="col-lg-3 col-md-4">
-                <h5 class="fw-bold mb-4" style="color: white;">Contact Us</h5>
+                <h5 class="fw-bold mb-4 text-white">Contact Info</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-3 text-white-50"><i class="fas fa-map-marker-alt me-2" style="color: var(--primary-pink);"></i> 123 Innovation Park, Tech City</li>
-                    <li class="mb-3 text-white-50"><i class="fas fa-phone-alt me-2" style="color: var(--primary-pink);"></i> +1 (555) 123-4567</li>
-                    <li class="mb-3 text-white-50"><i class="fas fa-envelope me-2" style="color: var(--primary-pink);"></i> hello@digibrandz.com</li>
+                    <li class="mb-3 text-white-50 d-flex align-items-start gap-3">
+                        <i class="fas fa-map-marker-alt mt-1 text-brand-pink"></i>
+                        <span>DigiBrandz IT Solutions, Innovation Park, India</span>
+                    </li>
+                    <li class="mb-3 text-white-50 d-flex align-items-center gap-3">
+                        <i class="fas fa-envelope text-brand-blue"></i>
+                        <span>hello@digibrandz.com</span>
+                    </li>
+                    <li class="mb-3 text-white-50 d-flex align-items-center gap-3">
+                        <i class="fas fa-phone-alt text-brand-purple"></i>
+                        <span>+91 (123) 456-7890</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -47,9 +64,10 @@
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     <p class="text-white-50 mb-0 small">&copy; <?php echo date('Y'); ?> DigiBrandz IT Solutions. All rights reserved.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-white-50 text-decoration-none small me-3">Privacy Policy</a>
-                    <a href="#" class="text-white-50 text-decoration-none small">Terms of Service</a>
+                <div class="col-md-6 text-center text-md-end footer-links d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="#" class="small">Privacy Policy</a>
+                    <span class="text-white-50">•</span>
+                    <a href="#" class="small">Terms of Service</a>
                 </div>
             </div>
         </div>

@@ -1,138 +1,191 @@
 <?php require_once 'includes/header.php'; ?>
 
-<!-- Page Header -->
-<section class="py-5 bg-lavender">
-    <div class="container text-center">
-        <h1 class="display-5 fw-bold mb-3">Get In <span class="text-gradient">Touch</span></h1>
-        <p class="lead text-muted">Ready to transform your brand? Let's talk about your project.</p>
+<!-- 1. HERO SECTION (MATCHING HOMEPAGE COLOR & DESIGN) -->
+<section class="hero-section text-center position-relative overflow-hidden">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content position-relative z-index-1 py-4">
+        <div class="eyebrow-badge mb-3">
+            <span class="pulse-dot"></span> Let's Connect
+        </div>
+        <h1 class="display-4 mb-3 fw-bold">Have a Brand That Deserves <span class="text-gradient">To Be Seen?</span></h1>
+        <p class="lead mb-0 max-w-75 mx-auto text-muted">Tell us what you're building. We'll help you figure out what comes next with data-driven performance and creative storytelling.</p>
     </div>
 </section>
 
-<!-- Contact Section -->
+<!-- Contact & Interactive Enquiry Section -->
 <section class="section-padding bg-white">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
-                <!-- NEW ILLUSTRATION: Abstract Contact Visual -->
-                <div class="css-illustration w-100 mb-4" style="background: var(--bg-peach); border: none; height: 250px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                    <div style="position: absolute; width: 150px; height: 150px; border-radius: 50%; border: 2px dashed var(--primary-pink); opacity: 0.2; top: -50px; right: -50px;"></div>
-                    <div style="width: 70%; background: white; border-radius: 12px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); z-index: 2;">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div style="width: 30px; height: 30px; background: var(--bg-lavender); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-paper-plane" style="font-size: 10px; color: var(--primary-indigo);"></i>
-                            </div>
-                            <div style="height: 8px; width: 60%; background: #F1F5F9; border-radius: 4px;"></div>
-                        </div>
-                        <div style="height: 6px; width: 100%; background: #F8FAFC; border-radius: 3px; margin-bottom: 8px;"></div>
-                        <div style="height: 6px; width: 80%; background: #F8FAFC; border-radius: 3px; margin-bottom: 8px;"></div>
-                        <div style="height: 6px; width: 40%; background: #F8FAFC; border-radius: 3px;"></div>
-                        <div class="d-flex justify-content-end mt-3">
-                            <div style="height: 20px; width: 60px; background: var(--primary-pink); border-radius: 4px; opacity: 0.9;"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="aesthetic-card p-4 bg-mint">
-                    <h4 class="fw-bold mb-4">Contact Information</h4>
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-box me-3" style="color: var(--primary-indigo); font-size: 1.5rem;">
+        <div class="row g-5">
+            <!-- Left Info Column -->
+            <div class="col-lg-4 reveal" data-aos="fade-right">
+                <div class="aesthetic-card p-4 bg-subtle-purple mb-4">
+                    <h4 class="mb-3 fw-bold">Get In Touch</h4>
+                    <p class="text-muted small mb-4">Have a quick question or want to meet the team? Contact us directly or fill out the enquiry form.</p>
+                    
+                    <div class="d-flex align-items-start mb-4 gap-3">
+                        <div class="card-icon-wrapper bg-white text-brand-purple mb-0" style="width: 46px; height: 46px; font-size: 1.2rem;">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <p class="mb-0 text-muted">123 Innovation Park, Tech City, 10001</p>
+                        <div>
+                            <div class="fw-bold text-heading small">Office Address</div>
+                            <p class="mb-0 text-muted small">DigiBrandz IT Solutions, Innovation Park, Tech City</p>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-box me-3" style="color: var(--primary-indigo); font-size: 1.5rem;">
+                    
+                    <div class="d-flex align-items-start mb-4 gap-3">
+                        <div class="card-icon-wrapper bg-white text-brand-pink mb-0" style="width: 46px; height: 46px; font-size: 1.2rem;">
                             <i class="fas fa-phone-alt"></i>
                         </div>
-                        <p class="mb-0 text-muted">+1 (555) 123-4567</p>
+                        <div>
+                            <div class="fw-bold text-heading small">Call Us</div>
+                            <p class="mb-0 text-muted small">+91 (123) 456-7890</p>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <div class="icon-box me-3" style="color: var(--primary-indigo); font-size: 1.5rem;">
+                    
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="card-icon-wrapper bg-white text-brand-blue mb-0" style="width: 46px; height: 46px; font-size: 1.2rem;">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <p class="mb-0 text-muted">hello@digibrandz.com</p>
+                        <div>
+                            <div class="fw-bold text-heading small">Email Us</div>
+                            <p class="mb-0 text-muted small">hello@digibrandz.com</p>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Visual Character Card -->
+                <div class="aesthetic-card p-4 bg-subtle-blue text-center">
+                    <i class="fas fa-comments-dollar text-brand-blue mb-3" style="font-size: 42px;"></i>
+                    <h5 class="fw-bold mb-2">Free Consultation</h5>
+                    <p class="text-muted small mb-0">Our growth strategists evaluate your current digital presence and provide a clear audit report within 24 hours.</p>
+                </div>
             </div>
-            
-            <div class="col-lg-7" data-aos="fade-left">
-                <div class="aesthetic-card p-5 bg-white">
-                    <h3 class="fw-bold mb-4">Send Us a Message</h3>
+
+            <!-- Right Interactive Form Column -->
+            <div class="col-lg-8 reveal" style="transition-delay: 0.1s;">
+                <div class="aesthetic-card p-4 p-md-5 bg-white">
+                    <h3 class="fw-bold mb-2">Project Consultation Form</h3>
+                    <p class="text-muted mb-4 small">Fill out the details below to help us understand your business goals.</p>
+
                     <form action="#" method="POST">
-                        <div class="row g-3">
+                        <div class="row g-4">
+                            <!-- Basic Contact Details -->
                             <div class="col-md-6">
-                                <label class="form-label text-muted small fw-bold">Full Name</label>
-                                <input type="text" class="form-control form-control-lg" placeholder="John Doe" required style="border-radius: 12px; background: #F9FAFB;">
+                                <label class="form-label small fw-bold">Full Name *</label>
+                                <input type="text" class="form-control" placeholder="e.g. Rahul Sharma" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label text-muted small fw-bold">Email Address</label>
-                                <input type="email" class="form-control form-control-lg" placeholder="john@company.com" required style="border-radius: 12px; background: #F9FAFB;">
+                                <label class="form-label small fw-bold">Email Address *</label>
+                                <input type="email" class="form-control" placeholder="rahul@company.com" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label text-muted small fw-bold">Mobile Number</label>
-                                <input type="tel" class="form-control form-control-lg" placeholder="+1 234 567 890" required style="border-radius: 12px; background: #F9FAFB;">
+                                <label class="form-label small fw-bold">Mobile Number *</label>
+                                <input type="tel" class="form-control" placeholder="+91 98765 43210" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label text-muted small fw-bold">Company Name</label>
-                                <input type="text" class="form-control form-control-lg" placeholder="Company Inc." style="border-radius: 12px; background: #F9FAFB;">
+                                <label class="form-label small fw-bold">Company / Brand Name</label>
+                                <input type="text" class="form-control" placeholder="e.g. DigiBrandz Solutions">
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label text-muted small fw-bold">Website URL</label>
-                                <input type="url" class="form-control form-control-lg" placeholder="https://www.company.com" style="border-radius: 12px; background: #F9FAFB;">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label text-muted small fw-bold">Business Type</label>
-                                <select class="form-select form-select-lg" style="border-radius: 12px; background: #F9FAFB;">
-                                    <option value="" selected disabled>Select Type</option>
-                                    <option value="B2B">B2B Service</option>
-                                    <option value="B2C">B2C Retail</option>
-                                    <option value="Ecommerce">E-commerce</option>
-                                    <option value="Startup">Startup</option>
-                                </select>
+                                <label class="form-label small fw-bold">Business Website URL</label>
+                                <input type="url" class="form-control" placeholder="https://www.yourbrand.com">
                             </div>
                             
+                            <!-- Business Type Dropdown -->
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Business Type *</label>
+                                <select class="form-select" required>
+                                    <option value="" selected disabled>Select Business Type</option>
+                                    <option value="Startup">Startup</option>
+                                    <option value="SME">SME</option>
+                                    <option value="Enterprise">Enterprise</option>
+                                    <option value="E-commerce">E-commerce</option>
+                                    <option value="Real Estate">Real Estate</option>
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="Education">Education</option>
+                                    <option value="Restaurant/Café">Restaurant / Café</option>
+                                    <option value="Hotel/Tourism">Hotel / Tourism</option>
+                                    <option value="Construction">Construction</option>
+                                    <option value="Manufacturing/Industrial">Manufacturing / Industrial</option>
+                                    <option value="Retail">Retail & Fashion</option>
+                                    <option value="IT & Software">IT & Software</option>
+                                    <option value="Government">Government / Public</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Services Chips Selection -->
                             <div class="col-12 mt-4">
-                                <label class="form-label text-muted small fw-bold d-block mb-3">Services Interested In</label>
-                                <div class="row g-2">
-                                    <div class="col-md-4 col-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="Social Media" id="srv1">
-                                            <label class="form-check-label text-muted" for="srv1">Social Media</label>
-                                        </div>
+                                <label class="form-label small fw-bold d-block mb-3">Services Interested In *</label>
+                                <div class="contact-chip-group">
+                                    <div class="chip-checkbox">
+                                        <input type="checkbox" id="srv-sm" value="Social Media">
+                                        <label for="srv-sm"><i class="fas fa-hashtag me-1"></i> Social Media</label>
                                     </div>
-                                    <div class="col-md-4 col-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="Web Dev" id="srv2">
-                                            <label class="form-check-label text-muted" for="srv2">Web Development</label>
-                                        </div>
+                                    <div class="chip-checkbox">
+                                        <input type="checkbox" id="srv-seo" value="SEO">
+                                        <label for="srv-seo"><i class="fas fa-search me-1"></i> Website SEO</label>
                                     </div>
-                                    <div class="col-md-4 col-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="SEO" id="srv3">
-                                            <label class="form-check-label text-muted" for="srv3">SEO</label>
-                                        </div>
+                                    <div class="chip-checkbox">
+                                        <input type="checkbox" id="srv-ads" value="Meta & Google Ads">
+                                        <label for="srv-ads"><i class="fas fa-ad me-1"></i> Meta & Google Ads</label>
+                                    </div>
+                                    <div class="chip-checkbox">
+                                        <input type="checkbox" id="srv-web" value="Web & App Dev">
+                                        <label for="srv-web"><i class="fas fa-code me-1"></i> Website & App Dev</label>
+                                    </div>
+                                    <div class="chip-checkbox">
+                                        <input type="checkbox" id="srv-video" value="AI Video">
+                                        <label for="srv-video"><i class="fas fa-video me-1"></i> AI Video Production</label>
+                                    </div>
+                                    <div class="chip-checkbox">
+                                        <input type="checkbox" id="srv-perf" value="Performance Marketing">
+                                        <label for="srv-perf"><i class="fas fa-chart-line me-1"></i> Performance Marketing</label>
+                                    </div>
+                                    <div class="chip-checkbox">
+                                        <input type="checkbox" id="srv-leads" value="Lead Gen">
+                                        <label for="srv-leads"><i class="fas fa-bolt me-1"></i> Real Estate Lead Gen</label>
+                                    </div>
+                                    <div class="chip-checkbox">
+                                        <input type="checkbox" id="srv-ecom" value="E-Commerce">
+                                        <label for="srv-ecom"><i class="fas fa-shopping-cart me-1"></i> E-Commerce</label>
                                     </div>
                                 </div>
                             </div>
-                            
+
+                            <!-- Budget & Timeline -->
                             <div class="col-md-6 mt-4">
-                                <label class="form-label text-muted small fw-bold">Budget Range</label>
-                                <select class="form-select form-select-lg" style="border-radius: 12px; background: #F9FAFB;">
-                                    <option value="" selected disabled>Select Budget</option>
-                                    <option value="<1k">Under $1,000</option>
-                                    <option value="1k-5k">$1,000 - $5,000</option>
-                                    <option value="5k-10k">$5,000 - $10,000</option>
-                                    <option value="10k+">$10,000+</option>
+                                <label class="form-label small fw-bold">Estimated Project Budget</label>
+                                <select class="form-select">
+                                    <option value="" selected disabled>Select Budget Range</option>
+                                    <option value="<50k">Under ₹50,000 / month</option>
+                                    <option value="50k-1l">₹50,000 - ₹1,000,000 / month</option>
+                                    <option value="1l-3l">₹1,000,000 - ₹3,000,000 / month</option>
+                                    <option value="3l+">₹3,000,000+ / month</option>
                                 </select>
                             </div>
-                            
-                            <div class="col-12 mt-4">
-                                <label class="form-label text-muted small fw-bold">Project Details</label>
-                                <textarea class="form-control" rows="4" placeholder="Tell us about your goals..." style="border-radius: 12px; background: #F9FAFB;"></textarea>
+                            <div class="col-md-6 mt-4">
+                                <label class="form-label small fw-bold">Preferred Contact Method</label>
+                                <select class="form-select">
+                                    <option value="Phone Call">Phone Call</option>
+                                    <option value="WhatsApp">WhatsApp Message</option>
+                                    <option value="Email">Email Response</option>
+                                    <option value="Google Meet">Google Meet Call</option>
+                                </select>
                             </div>
-                            
+
+                            <!-- Project Details -->
                             <div class="col-12 mt-4">
-                                <button type="submit" class="btn btn-gradient w-100 py-3 fs-5">Submit Inquiry</button>
+                                <label class="form-label small fw-bold">Project Details & Goals</label>
+                                <textarea class="form-control" rows="4" placeholder="Tell us about your current digital challenges and what goals you want to achieve..."></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-12 mt-5">
+                                <button type="submit" class="btn btn-gradient w-100 py-3 fs-5">
+                                    <span>Get My Free Consultation</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
                             </div>
                         </div>
                     </form>
